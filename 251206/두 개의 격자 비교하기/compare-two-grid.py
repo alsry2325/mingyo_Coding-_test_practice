@@ -12,12 +12,14 @@ for _ in range(n):
     arr2.append(results)
 
 for i in range(n):
+    row = []
     for j in range(m):
         if arr1[i][j] == arr2[i][j]:
-            arr3.append(0)
+            row.append(0)
         else:
-            arr3.append(1)
-print(*arr3[0:4])
-print(*arr3[4:8])
-print(*arr3[8:12])
-print(*arr3[12:16])
+            row.append(1)
+    arr3.append(row)
+for i in range(n):
+    for j in range(m):
+        print(arr3[i][j],end=" ")
+    print()
