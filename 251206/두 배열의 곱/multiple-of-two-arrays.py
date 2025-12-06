@@ -3,15 +3,22 @@
 row = 3
 cols = 3
 
-matrix1 = []
-matrix2 = []
-for _ in range(row):
-    row_list = list(map(int,input().split()))
-    matrix1.append(row_list)
+matrix1 = [
+    list(map(int,input().split()))
+    for _ in range(row)
+]
 input()
-for _ in range(row):
-    row_list = list(map(int,input().split()))
-    matrix2.append(row_list)
+matrix2 = [
+     list(map(int,input().split()))
+    for _ in range(row)
+]
+# for _ in range(row):
+#     row_list = list(map(int,input().split()))
+#     matrix1.append(row_list)
+# input()
+# for _ in range(row):
+#     row_list = list(map(int,input().split()))
+#     matrix2.append(row_list)
 
 for i in range(row):
     for j in range(cols):
